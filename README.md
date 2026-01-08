@@ -62,3 +62,17 @@ super + shift + egrave
 super + shift + underscore
     bspc node -d ^8 --follow
 ```
+
+
+##### step ???+1 : 
+###### preview : 
+<img width="945" height="510" alt="image" src="https://github.com/user-attachments/assets/7da48145-44d9-48a8-ac21-4b77b3d651f8" />
+
+- the goal  here is to  make animated neofetch using piewdipie config files just  remember to  add this files to my .zshrc file :
+```bash
+if [[ -n $PS1 ]]; then
+   ~/.config/neofetch/animated-neofetch.sh 0.05
+  clear
+fi
+```  
+    
