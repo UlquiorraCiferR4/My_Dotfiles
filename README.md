@@ -91,10 +91,13 @@ super + shift + underscore
 <img width="945" height="510" alt="image" src="https://github.com/user-attachments/assets/7da48145-44d9-48a8-ac21-4b77b3d651f8" />
 
 - the goal  here is to  make animated neofetch using piewdipie config files just  remember to  add this files to my .zshrc file :
+  I'made it shows only if I'm on alacrity  since it don't work fine with 
 ```bash
-if [[ -n $PS1 ]]; then
+if [[ "$term" == "alacritty" ]]; then
+if [[ -n $ps1 ]]; then
    ~/.config/neofetch/animated-neofetch.sh 0.05
   clear
+fi
 fi
 ```
 ---
