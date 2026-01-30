@@ -6,6 +6,18 @@
 ##### step ??? :  
 just  add these lignes under the .config/bspwm/sxhkdrc file : 
 
+
+remove or comment these lignes to provent navigation errors : 
+```bash
+# Switch workspace
+ctrl + alt + {Left,Right}
+    bspc desktop -f {prev.local,next.local}
+
+# Switch workspace or Send focused Node to another workspace
+super + {_,shift + }{1-8}
+	bspc {desktop -f,node -d} '^{1-8}' '--follow
+```
+
 ```bash
 # ─────────────────────────────────
 # navigate between workspaces 1–8 #
