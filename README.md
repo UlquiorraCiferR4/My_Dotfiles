@@ -1,11 +1,20 @@
 # My Dotfiles 
 
+####to close apps : 
+change this :
 
-
-
+# Close App
+```bash
+super + {_,shift + }c
+	bspc node -{c,k}
+```
+to this : 
+```bash
+super + {_,shift + }q
+	bspc node -{c,k}
+```
 ##### step ??? :  
 just  add these lignes under the .config/bspwm/sxhkdrc file : 
-
 
 remove or comment these lignes to provent navigation errors : 
 ```bash
@@ -17,7 +26,7 @@ ctrl + alt + {Left,Right}
 super + {_,shift + }{1-8}
 	bspc {desktop -f,node -d} '^{1-8}' '--follow
 ```
-
+then , just  add these lignes under the .config/bspwm/sxhkdrc file : 
 ```bash
 # ─────────────────────────────────
 # navigate between workspaces 1–8 #
